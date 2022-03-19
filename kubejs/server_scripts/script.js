@@ -132,6 +132,28 @@ var exnihi = [
     'exnihilosequentia:piece_gold'
 ]
 
+var clustercraft = [
+    'emendatusenigmatica:copper_cluster',
+    'emendatusenigmatica:lead_cluster',
+    'emendatusenigmatica:nickel_cluster',
+    'emendatusenigmatica:silver_cluster',
+    'emendatusenigmatica:aluminum_cluster',
+    'emendatusenigmatica:uranium_cluster',
+    'emendatusenigmatica:iron_cluster',
+    'emendatusenigmatica:gold_cluster'
+]
+
+var emendatus = [
+    'emendatusenigmatica:copper_chunk',
+    'emendatusenigmatica:lead_chunk',
+    'emendatusenigmatica:nickel_chunk',
+    'emendatusenigmatica:silver_chunk',
+    'emendatusenigmatica:aluminum_chunk',
+    'emendatusenigmatica:uranium_chunk',
+    'emendatusenigmatica:iron_chunk',
+    'emendatusenigmatica:gold_chunk'
+]
+
 onEvent('item.tags', event => {
 
     for (var i = 0; i <= 7; i++) {
@@ -166,7 +188,7 @@ onEvent('recipes', event => {
     event.remove({ type: 'minecraft:smelting' })
     event.remove({ type: 'minecraft:blasting' })
 
-    for (var i of exnihi) {
+    for (var i = 0; i <= 7; i++) {
 
         event.remove({ output: exnihi[i] })
 
@@ -389,4 +411,14 @@ onEvent('recipes', event => {
 
     }
 
+    for (var i = 0; i <= 7; i++) {
+
+        event.shaped(clustercraft[i], [
+            'SS',
+            'SS'
+        ], {
+            S: emendatus[i]
+        })
+
+    }
 })

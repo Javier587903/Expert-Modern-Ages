@@ -46,18 +46,25 @@
 			description: ["Ya sabes qué hacer: ¡Consigue madera!"]
 			dependencies: ["5436F9504E69C65B"]
 			id: "51130C4050C47806"
-			tasks: [{
-				id: "4A099A52BC7D57CE"
-				type: "item"
-				title: "Madera"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "minecraft:logs"
+			tasks: [
+				{
+					id: "4A099A52BC7D57CE"
+					type: "item"
+					title: "Madera"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
 					}
 				}
-			}]
+				{
+					id: "13DAB373FAD9EC2C"
+					type: "item"
+					item: "exnihilosequentia:silkworm"
+				}
+			]
 			rewards: [{
 				id: "2983111ED9E7921F"
 				type: "item"
@@ -68,8 +75,8 @@
 		{
 			title: "A minar!"
 			icon: "minecraft:cobblestone"
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: -2.5d
 			description: [
 				"¡Obten 15 de cobblestone o cualquier material que encuentres bajo tierra!"
 				""
@@ -134,8 +141,8 @@
 					}
 				}
 			}
-			x: 1.0d
-			y: 0.0d
+			x: 0.5d
+			y: -2.5d
 			description: [
 				"Asi es, no te alarmes!"
 				""
@@ -267,8 +274,8 @@
 					}
 				}
 			}
-			x: 4.0d
-			y: -0.5d
+			x: 5.0d
+			y: -1.5d
 			description: ["Al igual que el pico de madera necesitaras todas las partes para poder craftearlo"]
 			dependencies: ["296E8F4724F6E49B"]
 			id: "66AE8760EDCD2AA3"
@@ -526,7 +533,7 @@
 			}
 			x: 3.0d
 			y: -1.5d
-			dependencies: ["66AE8760EDCD2AA3"]
+			dependencies: ["296E8F4724F6E49B"]
 			id: "42B40393F1C87800"
 			tasks: [
 				{
@@ -616,8 +623,8 @@
 		}
 		{
 			title: "Una mesa de crafteo!"
-			x: 2.0d
-			y: -0.5d
+			x: 0.0d
+			y: 1.0d
 			dependencies: [
 				"2527253E6ACA3B9A"
 				"42B40393F1C87800"
@@ -639,7 +646,7 @@
 		{
 			title: "Y el horno?"
 			icon: "minecraft:smoker"
-			x: 2.5d
+			x: 2.0d
 			y: 1.0d
 			description: ["Necesitaras un ahumador para poder hacer un charcoal y asi poder craftear un horno"]
 			hide_dependency_lines: false
@@ -659,15 +666,19 @@
 		}
 		{
 			title: "La edad del hierro"
-			icon: "emendatusenigmatica:iron_ore"
-			x: 3.5d
-			y: 1.0d
-			dependencies: ["66AE8760EDCD2AA3"]
+			icon: "emendatusenigmatica:iron_chunk"
+			x: 5.0d
+			y: 0.0d
+			dependencies: [
+				"66AE8760EDCD2AA3"
+				"629DC085CE567A4F"
+			]
 			id: "722C9C08337A4C68"
 			tasks: [{
 				id: "60F2A6B8A8A0E39E"
 				type: "item"
 				title: "Mena de hierro"
+				icon: "emendatusenigmatica:iron_chunk"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -688,7 +699,7 @@
 			y: 2.0d
 			dependencies: [
 				"734C12CC8968E231"
-				"722C9C08337A4C68"
+				"589AD4972F4A5E75"
 			]
 			id: "107DC1FD96573BB1"
 			tasks: [{
@@ -843,6 +854,86 @@
 				id: "1BD99481E3E3E990"
 				type: "item"
 				item: "tconstruct:materials_and_you"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["722C9C08337A4C68"]
+			id: "589AD4972F4A5E75"
+			tasks: [{
+				id: "473659FAFAB3C01F"
+				type: "item"
+				item: "emendatusenigmatica:iron_cluster"
+			}]
+		}
+		{
+			icon: {
+				id: "exnihilosequentia:crook_wood"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["1113E65A58266749"]
+			id: "38D476E12D357F6B"
+			tasks: [
+				{
+					id: "34DEF8AB8F43FE97"
+					type: "item"
+					item: {
+						id: "exnihilosequentia:crook_wood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "13E029B6C0642116"
+					type: "item"
+					item: "minecraft:string"
+				}
+			]
+		}
+		{
+			icon: "exnihilosequentia:mesh_string"
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["38D476E12D357F6B"]
+			id: "4DE4ABD9DC5AFC13"
+			tasks: [
+				{
+					id: "581181E4D6A2AFE7"
+					type: "item"
+					title: "Any #exnihilosequentia:sieves"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "exnihilosequentia:sieves"
+						}
+					}
+				}
+				{
+					id: "27FEB244FA4FA403"
+					type: "item"
+					item: "exnihilosequentia:mesh_string"
+				}
+			]
+		}
+		{
+			icon: "exnihilosequentia:mesh_flint"
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["4DE4ABD9DC5AFC13"]
+			id: "629DC085CE567A4F"
+			tasks: [{
+				id: "27DEEA84B26C997D"
+				type: "item"
+				item: "exnihilosequentia:mesh_flint"
 			}]
 		}
 	]
