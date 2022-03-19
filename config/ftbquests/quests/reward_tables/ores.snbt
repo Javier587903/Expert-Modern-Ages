@@ -1,0 +1,11 @@
+{
+	id: "7DC526170EAC6CE2"
+	order_index: 1
+	title: "ores"
+	icon: "emendatusenigmatica:tin_ore"
+	loot_size: 1
+	rewards: [
+		{ item: "emendatusenigmatica:lead_ore", count: 4 }
+		{ item: "emendatusenigmatica:tin_ore", count: 4 }
+	]
+}

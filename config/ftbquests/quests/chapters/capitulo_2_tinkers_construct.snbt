@@ -1,0 +1,136 @@
+{
+	id: "6E2186AE515BB6F7"
+	group: "10CB50B8E624291D"
+	order_index: 1
+	filename: "capitulo_2_tinkers_construct"
+	title: "Capitulo 2: Tinkers´ Construct"
+	icon: "tconstruct:materials_and_you"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.5d
+			y: -0.5d
+			dependencies: [
+				"6A6EBDC8EB60635C"
+				"4571BF9428C535A5"
+				"0B6F2214BA6E3E46"
+			]
+			id: "01351067C60A3FF5"
+			tasks: [{
+				id: "26F0A70FC6FECE40"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["2F1121A17B6C31AB"]
+			id: "0B6F2214BA6E3E46"
+			tasks: [{
+				id: "01E4220C5B22D9DB"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["2F1121A17B6C31AB"]
+			id: "6A6EBDC8EB60635C"
+			tasks: [{
+				id: "2C8B02428FFECFCB"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["2F1121A17B6C31AB"]
+			id: "4571BF9428C535A5"
+			tasks: [{
+				id: "186D837F564928F1"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["01351067C60A3FF5"]
+			id: "554B0A8B315CE682"
+			tasks: [{
+				id: "50BCD01E14C06677"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -0.5d
+			dependencies: ["7EDA9FC25DEE4742"]
+			id: "312421E0CDEDA9DC"
+			tasks: [{
+				id: "5488AF570B129279"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			dependencies: ["312421E0CDEDA9DC"]
+			id: "78E5E1D14DE03AEE"
+			tasks: [{
+				id: "05DA77864F428FAF"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			dependencies: ["78E5E1D14DE03AEE"]
+			id: "50E22057DBAB49B6"
+			tasks: [{
+				id: "0A72374BD720608D"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			dependencies: ["78E5E1D14DE03AEE"]
+			id: "4B9D73BEEF2896B1"
+			tasks: [{
+				id: "5004B93CB4B942CF"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["554B0A8B315CE682"]
+			id: "7EDA9FC25DEE4742"
+			tasks: [{
+				id: "766C3B27DBDE4454"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			id: "28C848FE5AC77693"
+			tasks: [{
+				id: "3CB4C65265FE6BB9"
+				type: "item"
+				item: "tconstruct:pattern"
+			}]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	id: "48EE2764F5B29502"
+	group: "10CB50B8E624291D"
+	order_index: 2
+	filename: "capitulo_3_immersive_engineering"
+	title: "Capitulo 3: Immersive Engineering"
+	icon: {
+		id: "immersiveengineering:hammer"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

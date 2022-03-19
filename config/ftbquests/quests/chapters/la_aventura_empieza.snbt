@@ -1,0 +1,849 @@
+{
+	id: "49EA9805485833E7"
+	group: "10CB50B8E624291D"
+	order_index: 0
+	filename: "la_aventura_empieza"
+	title: "Capitulo 1: La aventura empieza!"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "¿Qué es Expert Modern Ages?"
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"Expert Modern Ages, es un modpack experto orientado a la automatización de los mods."
+				""
+				"Expert Modern Ages es un paquete experto. Esto significa diferentes cosas para diferentes personas, pero aquí lo estamos usando para decir: El modpack tardará mucho en completarse."
+				""
+				"El modpack está estructurado en torno a la progresión: la mayoría de las cosas están bloqueadas, muchos crafteos cambian con respecto al original."
+				""
+				"Los crafteos serán costosas y requerirán automatización, a veces mínima, a veces extrema. Afortunadamente, hay muchas herramientas que te ayudarán en esta tarea y se irán desbloqueando poco a poco durante la primera mitad del modpack."
+				""
+				"Applied Energistics va a ser tu amigo, necesitarás autofabricar o autoprocesar casi todo lo que hay que buscar."
+				""
+				"El objetivo del modpack es básicamente llegar a elementos creativos... No tan original, lo sé, pero lo que ES original es la progresión. Más de 7 artículos personalizados únicos y más de 5000 crafteos modificadas te guiarán hacia el final..."
+				""
+				"¡Buena suerte!"
+				""
+				"La estructura del modpack es la siguiente:"
+				""
+				"Early game: Vanilla Minecraft, Tinkers Construct, Immersive Engineering"
+			]
+			id: "5436F9504E69C65B"
+			tasks: [{
+				id: "69F69824964726F1"
+				type: "checkmark"
+				title: "¿Qué es Viaje Divino 2?"
+			}]
+		}
+		{
+			title: "Todo empieza de la misma manera..."
+			icon: "minecraft:oak_log"
+			x: -0.5d
+			y: -0.5d
+			description: ["Ya sabes qué hacer: ¡Consigue madera!"]
+			dependencies: ["5436F9504E69C65B"]
+			id: "51130C4050C47806"
+			tasks: [{
+				id: "4A099A52BC7D57CE"
+				type: "item"
+				title: "Madera"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2983111ED9E7921F"
+				type: "item"
+				item: "minecraft:apple"
+				count: 3
+			}]
+		}
+		{
+			title: "A minar!"
+			icon: "minecraft:cobblestone"
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"¡Obten 15 de cobblestone o cualquier material que encuentres bajo tierra!"
+				""
+				"¡No te olvides del ORE EXCAVATOR!"
+			]
+			dependencies: ["28B83AB1C97E117B"]
+			id: "296E8F4724F6E49B"
+			tasks: [{
+				id: "21C712C1C7BF5B83"
+				type: "item"
+				title: "Cobblestone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0853E459DDA0B6D6"
+				type: "item"
+				item: "minecraft:coal"
+				count: 4
+			}]
+		}
+		{
+			title: "Un pico antes que la mesa!"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 0.0f
+						"tconstruct:harvest_level": 0.0f
+						"tconstruct:durability": 60.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 3s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 1.0d
+			y: 0.0d
+			description: [
+				"Asi es, no te alarmes!"
+				""
+				"Necesitaras cada una de las partes para poder juntarla y asi craftear un pico"
+			]
+			dependencies: ["51130C4050C47806"]
+			id: "28B83AB1C97E117B"
+			tasks: [
+				{
+					id: "2CF8376116296A5F"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "245D2821C5F560BF"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "1DF1D69EDECCB677"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "732EF84358875C21"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:mining_speed": 2.0f
+								"tconstruct:attack_damage": 0.0f
+								"tconstruct:harvest_level": 0.0f
+								"tconstruct:durability": 60.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 3s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "564E9F146C11ED3C"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 4
+			}]
+		}
+		{
+			title: "Pico de Piedra"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 4.0f
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 130.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 2s
+						}
+					]
+					Damage: 0
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:stone"
+					]
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 4.0d
+			y: -0.5d
+			description: ["Al igual que el pico de madera necesitaras todas las partes para poder craftearlo"]
+			dependencies: ["296E8F4724F6E49B"]
+			id: "66AE8760EDCD2AA3"
+			tasks: [
+				{
+					id: "427633DCE477620D"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "3DA3BAC22ACF64FB"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "6F1977BE03D04295"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "60DD46DA0E343683"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:mining_speed": 4.0f
+								"tconstruct:attack_damage": 1.0f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 130.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 2s
+								}
+							]
+							Damage: 0
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:stone"
+							]
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "333EAC59F35B9990"
+				type: "item"
+				item: "minecraft:leather"
+				count: 2
+			}]
+		}
+		{
+			title: "Hacha de madera"
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 6.0f
+						"tconstruct:harvest_level": 0.0f
+						"tconstruct:durability": 60.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 3s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["3A6775805A1BFDAC"]
+			id: "2527253E6ACA3B9A"
+			tasks: [
+				{
+					id: "26231614F7900271"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "2CA5266DB91AEAEE"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "0BCF74BDA0F98958"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "2A51A37236BD0C99"
+					type: "item"
+					item: {
+						id: "tconstruct:hand_axe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 2.0f
+								"tconstruct:attack_damage": 6.0f
+								"tconstruct:harvest_level": 0.0f
+								"tconstruct:durability": 60.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 3s
+								}
+								{
+									name: "tconstruct:axe_transform_hidden"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:wood"
+								"tconstruct:wood"
+								"tconstruct:wood"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0CFD74FF165D82D3"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 8
+			}]
+		}
+		{
+			title: "Hacha de Piedra"
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 4.0f
+						"tconstruct:attack_damage": 7.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 130.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 2s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					Damage: 0
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:wood"
+						"tconstruct:stone"
+					]
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 3.0d
+			y: -1.5d
+			dependencies: ["66AE8760EDCD2AA3"]
+			id: "42B40393F1C87800"
+			tasks: [
+				{
+					id: "1A2C70B548046224"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "54D50FA0464ED5BA"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "3137C2A00DD8D11E"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "2B0483F33A72BCC8"
+					type: "item"
+					item: {
+						id: "tconstruct:hand_axe"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 4.0f
+								"tconstruct:attack_damage": 7.0f
+								"tconstruct:harvest_level": 1.0f
+								"tconstruct:durability": 130.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:cultivated"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 2s
+								}
+								{
+									name: "tconstruct:axe_transform_hidden"
+									level: 1s
+								}
+							]
+							Damage: 0
+							tic_materials: [
+								"tconstruct:stone"
+								"tconstruct:wood"
+								"tconstruct:stone"
+							]
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "72257FFD7EFF9FB6"
+				type: "item"
+				item: "minecraft:stick"
+				count: 6
+			}]
+		}
+		{
+			title: "Una mesa de crafteo!"
+			x: 2.0d
+			y: -0.5d
+			dependencies: [
+				"2527253E6ACA3B9A"
+				"42B40393F1C87800"
+			]
+			id: "1113E65A58266749"
+			tasks: [{
+				id: "732E542E5B8EC377"
+				type: "item"
+				item: "minecraft:crafting_table"
+				only_from_crafting: true
+			}]
+			rewards: [{
+				id: "1DF27DF074618F78"
+				type: "choice"
+				icon: "minecraft:jungle_sapling"
+				table_id: 4759022807048683867L
+			}]
+		}
+		{
+			title: "Y el horno?"
+			icon: "minecraft:smoker"
+			x: 2.5d
+			y: 1.0d
+			description: ["Necesitaras un ahumador para poder hacer un charcoal y asi poder craftear un horno"]
+			hide_dependency_lines: false
+			dependencies: ["1113E65A58266749"]
+			id: "734C12CC8968E231"
+			tasks: [{
+				id: "731CB99E28F8D5AB"
+				type: "item"
+				item: "minecraft:smoker"
+			}]
+			rewards: [{
+				id: "2769400344506B75"
+				type: "item"
+				item: "thermal:charcoal_block"
+				count: 4
+			}]
+		}
+		{
+			title: "La edad del hierro"
+			icon: "emendatusenigmatica:iron_ore"
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["66AE8760EDCD2AA3"]
+			id: "722C9C08337A4C68"
+			tasks: [{
+				id: "60F2A6B8A8A0E39E"
+				type: "item"
+				title: "Mena de hierro"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+			}]
+			rewards: [{
+				id: "64205FCE6BE2395D"
+				type: "choice"
+				icon: "emendatusenigmatica:tin_ore"
+				table_id: 9062691705625275618L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: [
+				"734C12CC8968E231"
+				"722C9C08337A4C68"
+			]
+			id: "107DC1FD96573BB1"
+			tasks: [{
+				id: "596ADEC85B0E1A03"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["51130C4050C47806"]
+			id: "3A6775805A1BFDAC"
+			tasks: [{
+				id: "5615A6E4C9DEC71A"
+				type: "item"
+				item: "kubejs:oak_crafting_base"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["107DC1FD96573BB1"]
+			id: "7B4CC00AD2E7832E"
+			tasks: [{
+				id: "0DC43024999EC0BE"
+				type: "item"
+				item: "minecraft:brick"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["107DC1FD96573BB1"]
+			id: "2DBE928EBF9661AC"
+			tasks: [{
+				id: "35BC6FCFC6799835"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			dependencies: ["3A9DCE104EF74C20"]
+			id: "1CAC2DBB33958224"
+			tasks: [{
+				id: "31047D54BDBC4152"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:enigmatic_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["1CAC2DBB33958224"]
+			id: "1CC77ACE4EB9E5E8"
+			tasks: [{
+				id: "18A175BD0E3D6C10"
+				type: "item"
+				item: "emendatusenigmatica:iron_rod"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["1CAC2DBB33958224"]
+			id: "46659E9F6DBC3E23"
+			tasks: [{
+				id: "7DC8347A7B263F44"
+				type: "item"
+				item: "emendatusenigmatica:iron_gear"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			dependencies: ["1CAC2DBB33958224"]
+			id: "7C67739285F3DCEB"
+			tasks: [{
+				id: "5D1DB448902AC0F3"
+				type: "item"
+				item: "emendatusenigmatica:iron_plate"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.5d
+			description: [""]
+			dependencies: ["1CAC2DBB33958224"]
+			id: "383B6E3F7B14EBF4"
+			tasks: [{
+				id: "69FA92ECBCD2AD18"
+				type: "item"
+				item: "minecraft:stonecutter"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.5d
+			dependencies: ["383B6E3F7B14EBF4"]
+			id: "52DB9B270CB9A370"
+			tasks: [{
+				id: "0671642E1DC56267"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["107DC1FD96573BB1"]
+			id: "3A9DCE104EF74C20"
+			tasks: [{
+				id: "2AE63E5DE0D6E4F5"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.5d
+			dependencies: [
+				"7C67739285F3DCEB"
+				"1CC77ACE4EB9E5E8"
+			]
+			id: "6175A5259F459F60"
+			tasks: [{
+				id: "11EEB1FD1CA1A0AA"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+		}
+		{
+			icon: "tconstruct:materials_and_you"
+			x: 7.0d
+			y: 6.5d
+			dependencies: ["7C67739285F3DCEB"]
+			id: "2F1121A17B6C31AB"
+			tasks: [{
+				id: "35AD30AD8961BD83"
+				type: "checkmark"
+				title: "Tinkers´ Construct"
+			}]
+			rewards: [{
+				id: "1BD99481E3E3E990"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+		}
+	]
+}
