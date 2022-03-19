@@ -1,0 +1,19 @@
+//Hornos
+
+Añadido recipe iron(2 nuggets Horno, 4 nuggets Blasting)
+
+//Crafteos
+
+Creada recipe Blasting Furnace
+Creada recipe Furnace
+Creada recipe StoneCutter
+Creada recipe Hammer
+Creada recipe Iron ingot, Iron gear, Iron rood, Iron plate(Hammer)
+Cambiada exnihilo piece por emmendatus chunks
+
+//Eliminados
+Horno y resultados
+StoneCutter
+Crafteos Enigmatica
+Iron ingot
+EXnihilo piece sieve
